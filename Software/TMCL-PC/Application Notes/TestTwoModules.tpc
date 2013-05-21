@@ -1,0 +1,17 @@
+        CALC LOAD, 3
+Test:   ROL 0, 1000, 2
+        ROR 1, 500, 2
+        ROL 2, 250, 2
+        MVP ABS, 0, 50000, 1
+        WAIT POS, 0, 0, 1
+        ROR 0, 1000, 2
+        ROL 1, 500, 2
+        ROR 2, 250, 2
+        MVP ABS, 0, 0, 1
+        WAIT POS, 0, 0, 1
+        CALC SUB, 1
+        JC NZ, Test
+        MST 0, 2
+        MST 1, 2
+        MST 2, 2
+        

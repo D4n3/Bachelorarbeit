@@ -1,0 +1,37 @@
+% This file was created with JabRef 2.9.2.
+% Encoding: UTF8
+
+@BOOK{Gross2006,
+  title = {Technik elektrischer Vorschubantriebe in der Fertigungs- und Automatisierungstechnik},
+  publisher = {Publicis Corporate Publishing},
+  year = {2006},
+  author = {Groß, Hans and Hamann, Jens and Wiegärtner, Georg},
+  language = {ngerman},
+  address = {Erlangen},
+  owner = {prd33022},
+  timestamp = {2013.05.16}
+}
+
+@BOOK{Schroeder2007,
+  title = {Elektrische Antriebe - Grundlagen},
+  publisher = {Springer-Verlag},
+  year = {2007},
+  author = {Schröder, Dierk},
+  language = {ngerman},
+  address = {Berlin},
+  booktitle = {Elektrische Antriebe},
+  owner = {prd33022},
+  timestamp = {2013.05.14}
+}
+
+@BOOK{Stoelting2001,
+  title = {Handbuch Elektrische Kleinantriebe},
+  publisher = {Carl Hanser Verlag},
+  year = {2001},
+  author = {Stölting, Hans-Dieter and Kallenbach, Eberhard},
+  language = {ngerman},
+  address = {München},
+  owner = {prd33022},
+  timestamp = {2013.05.16}
+}
+

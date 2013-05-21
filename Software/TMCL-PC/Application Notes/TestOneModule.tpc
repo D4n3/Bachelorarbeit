@@ -1,0 +1,15 @@
+        CALC LOAD, 3
+Test:   ROL 0, 1000, 1
+        ROR 1, 1000, 1
+        ROL 2, 500, 1
+        WAIT TICKS, 0, 2000
+        ROR 0, 1000, 1
+        ROL 1, 1000, 1
+        ROR 2, 500, 1
+        WAIT TICKS, 0, 1000
+        CALC SUB, 1
+        JC NZ, Test
+        MST 0, 1
+        MST 1, 1
+        MST 2, 1
+        

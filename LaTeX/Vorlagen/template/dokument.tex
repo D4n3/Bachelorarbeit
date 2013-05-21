@@ -1,0 +1,60 @@
+\input{header}
+
+\begin {document}
+
+	%% Titelseite
+	\pdfbookmark[1]{Titelseite}{titlepage}
+	\input{titlepage}
+
+	%% Inhaltsverzeichnis
+
+	%% leere Seite (optional):
+	%\newpage
+	%\thispagestyle{empty}
+	%\null
+
+	\pagenumbering{Roman}
+	\clearpage\setcounter{page}{1}
+
+	\pdfbookmark[1]{Inhaltsverzeichnis}{tableofcontents}
+	\tableofcontents
+	\pagebreak
+
+	%% leere Seite (optional):
+	%\newpage
+	%\thispagestyle{empty}
+	%\null
+
+	%% Eigentlicher Inhalt
+	\pagenumbering{arabic}
+	\clearpage\setcounter{page}{1}
+
+	\include{kapitel1}
+	\include{kapitel2}
+	\include{kapitel3}
+	%% ...
+
+	%% Beginn vom Anhang
+	\appendix
+	\pagenumbering{Roman}
+	\clearpage\setcounter{page}{3}
+
+	%% Glossar
+	\include{glossar}
+
+	%% Verzeichnisse
+	\newpage
+	\listoffigures
+ 	% \listoftables
+	\lstlistoflistings
+
+	%% Literaturverzeichnis
+	\newpage
+	\bibliographystyle{gerapali}
+	\bibliography{quellen}
+	\nocite{*}
+
+	%% sonstiger Anhang:
+	\include{anhang}
+
+\end{document}

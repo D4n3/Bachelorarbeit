@@ -1,0 +1,95 @@
+% Beginn des Dokuments
+%
+% allgemeine Einstellungen: Schriftgrße 11pt, DIN A4, deutsches Sprachpaket
+%
+\documentclass[11pt, a4paper, ngerman, oneside, titlepage, parskip=half, listof=totoc, bibliography=totoc, captions=tableheading, draft]{scrreprt}
+
+% Einbindung weiterer Pakete
+% deutsche Silbentrennung
+\usepackage{babel}
+
+% Zeichencoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{}
+
+% mathematischer Formelsatz und Symbole
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+% Einbinden von externen Grafiken
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subfigure}
+\newcommand{\subfigureautorefname}{\figurename}
+
+% Hyperlinks zwischen Textstellen und zu externen Dokumenten
+\usepackage[pdfauthor={Daniel Probst}, pdftitle={Versuchsstand für Kleinmotoren}, pdfsubject={Aufbau und Einrichtung eines neuen Praktikumversuchs mit einer bürstenlosen Gleichstrommaschine und einem Hybrid-Schrittmotor}]{hyperref}
+
+% Erweiterung verbatim-Umgebung für Codezeilen
+\usepackage{listings}
+
+% Tabellen über mehrere Seiten mit automatischem Seitenumbruch
+%\usepackage{longtable}
+
+% Verbesserung Tabellenfunktionen
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+% bessere Zeilenumbrüche
+\usepackage[final]{microtype}
+
+% Formatierung Zahlen und physikalische Einheiten
+\usepackage{siunitx}
+
+% Umlaute für BibTeX
+\usepackage{babelbib}
+
+% Kopfzeile anpassen
+\usepackage[automark, headsepline, ilines]{scrpage2}
+\pagestyle{scrheadings}
+\clearscrheadings
+\ihead{\headmark}
+\ohead{\author}
+
+% für todo und listoftodo
+\usepackage[obeyDraft]{todonotes}
+
+% eigene Befehle einbinden
+\input{makros}
+
+% Dokumententitel
+\title{Versuchsstand für Kleinmotoren -- Aufbau und Einrichtung eines neuen Praktikumsversuchs mit einer bürstenlosen Gleichstrommaschine und einem Hybrid-Schrittmotor}
+\author{Daniel Probst}
+\date{\today, Regensburg}
+
+\makeindex
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{Roman}
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+
+\include{Schrittmotor}
+
+\listoffigures
+
+\listoftables
+
+\bibliography{literatur}{}
+\bibliographystyle{babplain}
+\nocite{*}
+
+\end{document}

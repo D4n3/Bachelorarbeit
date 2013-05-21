@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\btxselectlanguage {ngerman}
+\bibitem {Gross2006}
+\btxnamefont {\btxlastnamefont {Groß}, Hans}, \btxnamefont {Jens
+  \btxlastnamefont {Hamann}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Georg
+  \btxlastnamefont {Wiegärtner}}\btxauthorcolon\ \btxtitlefont {Technik
+  elektrischer Vorschubantriebe in der Fertigungs- und
+  Automatisierungstechnik}.
+\newblock \btxpublisherfont {Publicis Corporate Publishing}, Erlangen, 2006.
+
+\bibitem {Schroeder2007}
+\btxnamefont {\btxlastnamefont {Schröder}, Dierk}\btxauthorcolon\
+  \btxtitlefont {Elektrische Antriebe - Grundlagen}.
+\newblock \btxpublisherfont {Springer-Verlag}, Berlin, 2007.
+
+\bibitem {Stoelting2001}
+\btxnamefont {\btxlastnamefont {Stölting}, Hans\btxfnamespacelong Dieter}
+  \btxandlong {}\ \btxnamefont {Eberhard \btxlastnamefont
+  {Kallenbach}}\btxauthorcolon\ \btxtitlefont {Handbuch Elektrische
+  Kleinantriebe}.
+\newblock \btxpublisherfont {Carl Hanser Verlag}, München, 2001.
+
+\end{thebibliography}

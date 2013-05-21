@@ -1,0 +1,144 @@
+\chapter{Demos}
+\blindtext
+
+\bigskip
+
+Normale Listen mit itemize:
+\blinditemize[4]
+
+
+Kompakte Listen mit itemize*:
+\begin{itemize*}
+	\item item1
+	\item item2
+	\item item3
+	\item ...
+\end{itemize*}
+
+Aufzählungen mit enumerate:
+\blindenumerate
+
+kompakte Aufzählungen mit enumerate*:
+\begin{enumerate*}
+	\item item1
+	\item item2
+	\item item3
+	\item ...
+\end{enumerate*}
+
+
+\section{Abbildungen}
+
+\subsection{Abbildungen mit graphicx}
+
+\begin{figure}[H]
+	\vspace{1em}
+	\begin{center}
+		\includegraphics[width=4cm]{img/unilogo.png}
+	\end{center}
+	\vspace{-1em}
+	\caption{Abbildung einer Grafik}
+	\label{fig:graphicx}
+\end{figure}
+
+
+\subsection{Abbildungen mit Tikz}
+
+\begin{figure}[H]
+	\begin{center}
+	\begin{tikzpicture}
+		\tikzstyle{decision}=[draw, ellipse, minimum width=3em, minimum height=3em, drop shadow, fill=gruen]
+		\tikzstyle{flowbox}=[draw, rectangle, drop shadow, fill=gelb, minimum width=10em]
+		\tikzstyle{flowarrow}=[draw, ->, >= triangle 60, thick]
+		\tikzstyle{noarrow}=[draw, -, thick]
+
+		\node[flowbox] (mutation) {mutiere Individuum};
+		\node[decision] (better) [right=3em of mutation] {besser?};
+		\node[flowbox] (take) [right=3em of better] {ersetze Individuum};
+		\node[draw=none,fill=none] (hc) [below=1em of mutation, xshift=2em]{\textbf{LOOP}};
+
+		\path [flowarrow] (mutation) -- (better);
+		\path [flowarrow] (better.south) -- node [yshift=-0.1em, xshift=1.4em]{nein} ([yshift=-1.5em] better.south);
+		\path [flowarrow] ([yshift=-1.5em] better.south) -| (mutation.south);
+		\path [flowarrow] (better) -- node [yshift=0.8em]{ja}(take);
+		\path [noarrow] (take.south) |- ([yshift=-1.5em] better.south);
+	\end{tikzpicture}
+	\end{center}
+	\vspace{-1em}
+	\caption{Abbildung mit Tikz}
+	\label{fig:grafiktikz}
+\end{figure}
+
+
+\subsection{Umflossene Abbildungen}
+
+\blindtext
+	
+\begin{wrapfigure}{r}{0.45\textwidth}
+	\vspace{-1em}
+	\begin{center}
+		\includegraphics[width=4cm]{img/unilogo.png}
+	\end{center}
+	\vspace{-1em}
+	\caption{vertikaler Prototyp}
+	\label{fig:vertikaler_prototyping}
+	\vspace{-1em}
+\end{wrapfigure}
+
+\blindtext
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+	\vspace{-1em}
+	\begin{center}
+		\includegraphics[width=4cm]{img/unilogo.png}
+	\end{center}
+	\vspace{-1em}
+	\caption{vertikaler Prototyp}
+	\label{fig:vertikaler_prototyping}
+	\vspace{-1em}
+\end{wrapfigure}
+
+\blindtext
+
+\section{Theoreme}
+\blindtext
+
+\begin{definition}{Beispiel Definition}
+\\
+Dies ist keine Definition.
+\end{definition}
+
+\blindtext
+
+\section{Quelltext}
+\blindtext
+
+\vspace{1em}
+\begin{lstlisting}[language=C,caption={Beispielquelltext}, label=lst:beispiel]
+/* Kommentar */
+int i;
+for (i = 0; i < 100; i++) {
+	printf("Beispiel");
+}
+\end{lstlisting}
+
+\vspace{1em}
+\begin{lstlisting}[language=java,caption={Beispielquelltext 2}, label=lst:beispiel2]
+public static void annoyMe(final String bar) {
+	while(true)
+		System.out.println("I'm a annoying method...");
+}
+\end{lstlisting}
+
+\section{Zitate}
+
+\begin{itemize*}
+	\item \zitat{knuth98:art}
+	\item \zitat[Seite 16 ff.]{knuth98:art}
+	\item \zitatalt{knuth98:art}
+	\item \zitatalt[Seite 16 ff.]{knuth98:art}
+	\item \zitatsiehe{knuth98:art}
+	\item \zitatsiehe[Seite 16 ff.]{knuth98:art}
+	\item \zitatnach{knuth98:art}
+	\item \zitatnach[Seite 16 ff.]{knuth98:art}
+\end{itemize*}

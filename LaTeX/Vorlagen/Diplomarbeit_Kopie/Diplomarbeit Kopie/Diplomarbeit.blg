@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: Diplomarbeit.aux
+A level-1 auxiliary file: Deckblatt.aux
+A level-1 auxiliary file: Inhalt/Abstract.aux
+A level-1 auxiliary file: Inhalt/Akronyme.aux
+A level-1 auxiliary file: Inhalt/Einleitung.aux
+A level-1 auxiliary file: Inhalt/Vorgaben.aux
+A level-1 auxiliary file: Inhalt/Entwicklung.aux
+A level-1 auxiliary file: Inhalt/Analyse.aux
+A level-1 auxiliary file: Inhalt/Umsetzung.aux
+A level-1 auxiliary file: Inhalt/Fazit.aux
+A level-1 auxiliary file: Inhalt/Zusammenfassung.aux
+A level-1 auxiliary file: Inhalt/AufzaehlungenTabellen.aux
+The style file: natdin.bst
+A level-1 auxiliary file: Erklaerung.aux
+A level-1 auxiliary file: Anhang/mkDoc1.aux
+A level-1 auxiliary file: Anhang/mkDoc2.aux
+A level-1 auxiliary file: Anhang/mkDoc3.aux
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: Bibliographie.bib
+You've used 2 entries,
+            4728 wiz_defined-function locations,
+            906 strings with 6935 characters,
+and the built_in function-call counts, 943 in all, are:
+= -- 101
+> -- 20
+< -- 21
++ -- 26
+- -- 7
+* -- 67
+:= -- 164
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 9
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 32
+empty$ -- 63
+format.name$ -- 13
+if$ -- 182
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 5
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 10
+preamble$ -- 1
+purify$ -- 13
+quote$ -- 0
+skip$ -- 55
+stack$ -- 0
+substring$ -- 48
+swap$ -- 5
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 23
+warning$ -- 0
+while$ -- 5
+width$ -- 0
+write$ -- 34
